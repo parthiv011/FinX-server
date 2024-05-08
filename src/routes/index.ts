@@ -1,11 +1,11 @@
-import { Request, Response, Router } from "express";
+import { Request, Response, Router } from 'express';
 
 const router = Router();
-const userRouter = require('./user');
+import { userRouter } from './user';
 
 router.get('/', (req: Request, res: Response) => {
-    res.json('Welcome to FinX!')
-})
+  res.json('Welcome to FinX!');
+});
 
 router.use('/', userRouter);
 

@@ -1,9 +1,7 @@
 import { Request, Response, Router } from 'express';
 
-const router = Router();
+export const userRouter = Router();
 
-router.get('/user', (req: Request, res: Response) => {
+userRouter.get('/user', (req: Request, res: Response) => {
     res.json("User routes Works!")
 });
-
-module.exports = router;
